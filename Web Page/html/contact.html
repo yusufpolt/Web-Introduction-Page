@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="Web Tasarım Final Projesi">
+  <meta name="author" content="Yusuf Polat">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,Jquery">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+  <!-- JQuery CDN -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.css">
+  <script src="https://kit.fontawesome.com/62c8cfc459.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <script type="text/javascript">
+    $(function () {
+      $(".conctactBody").hide()
+    });
+    $(function () {
+      $("#contact .sectionHeader").click(function () {
+        $("#contact .conctactBody").slideToggle(300);
+      });
+    });
+  </script>
+
+  <title>Personal Web Site</title>
+</head>
+
+<body>
+  <!-- Nav Chapter -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html" class="navbar-brand">yusufpolat.com</a>
+      <div class="collapse navbar-collapse" id="nvbCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lessons.html">Lessons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section id="contactSlider" class="slider">
+    <div id="contactCaption" class="caption">
+      <h1>CONTACT</h1>
+      <p>Proin laoreet mollis risus sed bibendum. Praesent dictum porta enim, eget auctor.</p>
+    </div>
+  </section>
+
+
+  <!-- Gallery Section -->
+
+  <section id="gallery" class="sectionArea">
+    <div class="galleryTop">
+      <h2 class="sectionHeader">SIMPLE GALLERY</h2>
+      <p>Donec placerat, odio ac ornare tincidunt, turpis ante viverra neque, efficitur tristique felis elit non neque.
+      </p>
+    </div>
+    <div class="galleryBody">
+      <div class="containerX">
+        <div class="gallerySlider">
+          <div class="gallerySliderItem">
+            <img src="../images/contact.jpg" alt="">
+            <img src="../images/contact2.jpg" alt="">
+            <img src="../images/contact.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+
+  <section id="contact" class="sectionArea">
+    <div class="contactTop">
+      <h2 class="sectionHeader">Click For Contact</h2>
+      <p>Contact Me</p>
+    </div>
+    <div class="conctactBody">
+      <div class="container">
+        <div class="wrapper">
+          <form class="contactForm">
+            <div class="formItem">
+              <!-- fa-2x classı daha büyük bir icon oluşturmakta. -->
+              <span class="formShape"><i class="fa fa-user fa-2x"></i></span>
+              <!-- required ile bu alanı doldurulması zorunlu hale getirdim -->
+              <input type="text" class="formField" placeholder="Full Name" required>
+            </div>
+            <div class="formItem">
+              <!-- fa-2x classı daha büyük bir icon oluşturmakta. -->
+              <span class="formShape"><i class="fa fa-envelope fa-2x"></i></span>
+              <!-- required ile bu alanı doldurulması zorunlu hale getirdim -->
+              <input type="email" class="formField" placeholder="EMAIL" required>
+            </div>
+            <div class="formItem">
+              <!-- fa-2x classı daha büyük bir icon oluşturmakta. -->
+              <span class="formShape"><i class="fa fa-mobile phone fa-2x"></i></span>
+              <!-- required ile bu alanı doldurulması zorunlu hale getirdim -->
+              <input type="text" class="formField" placeholder="Phone" required>
+            </div>
+            <div class="formItem">
+              <!-- fa-2x classı daha büyük bir icon oluşturmakta. -->
+              <span class="formShape"><i class="fa fa-info fa-2x"></i></span>
+              <!-- required ile bu alanı doldurulması zorunlu hale getirdim -->
+              <input type="text" class="formField" placeholder="Subject" required>
+            </div>
+            <div class="formItem">
+              <!-- fa-2x classı daha büyük bir icon oluşturmakta. -->
+              <span class="formShape"><i class="fa fa-comment fa-2x"></i></span>
+              <textarea class="formField" placeholder="Message" rows="8"></textarea>
+            </div>
+            <div class="formItem">
+              <input type="submit" class="formBtn" value="sumbit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Lorem Ipsum</h5>
+          <p style="color: #bdc3c7;">orem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit metus augue, a
+            faucibus nibh facilisis ac. Sed pretium dictum turpis, in vehicula ante facilisis non. Vivamus quis gravida
+            est, sed luctus orci. Integer vitae facilisis ipsum. Aenean ut ultrices lorem, tempus vehicula nibh. Proin
+            vitae vulputate metus.</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled ">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="lessons.html"><i class="fas fa-chalkboard-teacher"></i> Lessons</a></li>
+            <li><a href="about.html"><i class="fas fa-address-card"></i> About Me</a></li>
+            <li><a href="contact.html"><i class="fas fa-file-signature"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Social Account</h5>
+          <div class="iconX">
+            <ul class="list-unstyled">
+              <li><a href="#!"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#!"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#!"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index.html"> yusufpolat.com</a>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
